@@ -26,10 +26,3 @@ Apply multimedia elements such as audio and video.
 - Ensure semantic correctness.
 
 Happy Coding! 💻✨
-
-
-
-Responsive design
-Basic CSS styling
-Proper semantic HTML structure
-Comments for clarity
