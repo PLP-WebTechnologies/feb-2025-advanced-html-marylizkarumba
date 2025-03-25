@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        form {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Roman Numeral List</h2>
+    <ol type="i">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+        <li>Fifth item</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Featured Image</h2>
+    <img src="https://images.pexels.com/photos/3052361/pexels-photo-3052361.jpeg" 
+         alt="Scenic landscape with mountains" 
+         style="max-width: 100%; height: auto;">
+
+    <!-- Contacts Table -->
+    <h2>Contact Directory</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Githieya</td>
+                <td>Nairobi, Kenya</td>
+                <td>+254720554567</td>
+                <td>john.githieya@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane Kamiri</td>
+                <td>Nairobi, Kenya</td>
+                <td>+254709876543</td>
+                <td>janekamiri@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mike Kariuki</td>
+                <td>Nairobi, Kenya</td>
+                <td>+254722468135</td>
+                <td>mikekariuki@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Sarah Wangui</td>
+                <td>Nairobi, Kenya</td>
+                <td>+254723692580</td>
+                <td>sarahwangui@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Alex Kamau</td>
+                <td>Nairobi, Kenya</td>
+                <td>+254721597530</td>
+                <td>alexkamau@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form id="registrationForm" action="#" method="post">
+        <!-- Personal Information -->
+        <div>
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" 
+                   placeholder="Enter your full name" 
+                   required minlength="2" maxlength="50">
+        </div>
+
+        <div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" 
+                   placeholder="Enter your email address" 
+                   required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
+
+        <div>
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" 
+                   placeholder="Enter your password" 
+                   required minlength="8" maxlength="20">
+        </div>
+
+        <div>
+            <label for="birthdate">Date of Birth *</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+
+        <!-- Dropdown -->
+        <div>
+            <label for="country">Country *</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="us">Tanzania</option>
+                <option value="ca">Rwanda</option>
+                <option value="uk">Kenya</option>
+                <option value="au">Uganda</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div>
+            <label>Gender *</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div>
+            <label>Interests (Optional)</label>
+            <div>
+                <input type="checkbox" id="technology" name="interests" value="technology">
+                <label for="technology">Technology</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="travel" name="interests" value="travel">
+                <label for="travel">Travel</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+            </div>
+        </div>
+
+        <div>
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>

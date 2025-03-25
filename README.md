@@ -26,3 +26,53 @@ Apply multimedia elements such as audio and video.
 - Ensure semantic correctness.
 
 Happy Coding! 💻✨
+
+
+According to the assignment described above this is the script description:
+
+This is my submission of My HTML document:
+
+Ordered List:
+
+Used <ol type="i"> to create a list with Roman numerals
+Included 5 list items
+
+
+External Image:
+
+Added an image from Pexels
+Included responsive styling to ensure it fits the page width
+
+
+Contacts Table:
+
+Created a table with 5 contacts
+Columns include Name, Address, Mobile, and Email
+Added borders and styling for readability
+
+
+Registration Form:
+
+Included all requested fields:
+
+Name (with length validation)
+Email (with pattern validation)
+Password (with length constraints)
+Date of Birth
+
+
+Added a country dropdown
+Included gender radio buttons
+Added interests checkboxes
+All required fields marked with *
+Implemented form validation attributes
+Added submit and reset buttons
+
+
+
+Additional features:
+
+Responsive design
+Basic CSS styling
+Proper semantic HTML structure
+Comments for clarity
